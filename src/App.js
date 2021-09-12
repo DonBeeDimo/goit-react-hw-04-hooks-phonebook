@@ -81,7 +81,11 @@ export default function App() {
       ) : (
         <p>Your phonebook is empty. Please add contact.</p>
       )}
-      <ToastContainer autoClose={3700} />
+      <ToastContainer
+        autoClose={3000}
+        theme="colored"
+        toastStyle={{ backgroundColor: 'red' }}
+      />
     </Container>
   );
 }
